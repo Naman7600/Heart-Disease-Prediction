@@ -1,7 +1,8 @@
-# Heart-Disease-Prediction-Classifier
+# ❤️ Heart Disease Prediction using Decision Tree Classifier
 
 A machine learning project that predicts the presence of heart disease using a **Decision Tree Classifier**, achieving **80.3% accuracy** with an optimal tree depth of **4**.
 
+---
 ---
 
 ## 🔍 Overview
@@ -12,7 +13,7 @@ The key finding is that a `max_depth` of **4** provides the best balance between
 
 ---
 
-## 📊 Dataset 
+## 📊 Dataset
 **Rows:** 303 | **Features:** 13 | **Target:** `target` (0 or 1)
 
 | Feature | Description |
@@ -33,21 +34,7 @@ The key finding is that a `max_depth` of **4** provides the best balance between
 | `target` | Diagnosis result (1 = disease, 0 = no disease) |
 
 ---
-
-## 📁 Project Structure
-
-```
-heart-disease-decision-tree/
-│
-├── heart.csv                        # Dataset
-├── heart_disease_decision_tree.ipynb # Jupyter Notebook (full analysis)
-├── README.md                        # Project documentation
-├── images/
-│   ├── performance_plots.png        # Accuracy vs Depth + Confusion Matrix
-│   ├── decision_tree.png            # Tree visualization
-│   └── feature_importance.png      # Feature importances bar chart
-└── requirements.txt                 # Python dependencies
-
+---
 ---
 
 ## 📈 Results
@@ -71,13 +58,15 @@ heart-disease-decision-tree/
 ```
               precision    recall  f1-score   support
 
-   No Disease     0.74      0.90      0.81        29
-      Disease     0.88      0.72      0.79        32
+   No Disease     0.81      0.90      0.85        29
+      Disease     0.90      0.81      0.85        32
 
-    accuracy                           0.80        61
+    accuracy                           0.85        61
+```
 
+---
 
-
+---
 
 ## 🛠️ Technologies Used
 
@@ -88,3 +77,6 @@ heart-disease-decision-tree/
 - **Jupyter Notebook** — interactive development
 
 ---
+
+---
+
