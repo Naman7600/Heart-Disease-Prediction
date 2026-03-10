@@ -47,46 +47,6 @@ heart-disease-decision-tree/
 │   ├── decision_tree.png            # Tree visualization
 │   └── feature_importance.png      # Feature importances bar chart
 └── requirements.txt                 # Python dependencies
-```
-
-## 🚀 Usage
-
-Run the Jupyter Notebook:
-
-```bash
-jupyter notebook heart_disease_decision_tree.ipynb
-```
-
-Or run inline with Python:
-
-```python
-import pandas as pd
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-
-# Load data
-df = pd.read_csv('heart.csv')
-X = df.drop('target', axis=1)
-y = df['target']
-
-# Train-test split
-x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Find best depth
-depths = range(1, 14)
-for i in depths:
-    dt = DecisionTreeClassifier(max_depth=i, random_state=42)
-    dt.fit(x_train, y_train)
-    acc = accuracy_score(y_test, dt.predict(x_test))
-    print(f'Max_depth is {i} Accuracy Score is {acc}')
-
-# Train best model
-dt_best = DecisionTreeClassifier(max_depth=4, random_state=42)
-dt_best.fit(x_train, y_train)
-y_pred = dt_best.predict(x_test)
-print(f'\nFinal Accuracy: {accuracy_score(y_test, y_pred):.4f}')
-```
 
 ---
 
